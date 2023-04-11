@@ -1,0 +1,78 @@
+.cardio{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.left-car{
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+   
+    color: white;
+}
+.left-car>:nth-child(1)
+{
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.left-car>:nth-child(2),
+.left-car>:nth-child(3)
+{
+    font-weight: bolder;
+    font-size: 17px;
+    color: black;
+}
+.left-car>:nth-child(4)
+{
+    text-decoration: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.right-car{
+    flex: 1;
+    position: relative;
+}
+.right-car>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+    
+}
+.right-car>:nth-child(1)
+{
+    position: absolute;
+    width: 17rem;height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+.right-car>:nth-child(2)
+{
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    right: 7rem;
+    top: 4rem;
+    background: orange;
+}
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}

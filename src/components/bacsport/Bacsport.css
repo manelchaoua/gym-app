@@ -1,0 +1,56 @@
+.coursg .content-g{
+    flex-wrap: wrap;
+    margin-left: 100px;
+   
+}
+.coursg{
+    margin-left: 210px;
+}
+.span{
+    color: orange;
+}
+.content-g{
+    margin-top: 80px;
+    
+}
+.coursg .content-g .frame-g{
+    position: relative;
+    width: 700px;
+    height: 450px;
+    padding: 20px;
+    
+    margin: 10px;
+    background: black;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+.coursg .content-g .frame-g .box-g{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+   
+}
+.coursg .content-g .frame-g .box-g img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: 0.2s ease-in;
+}
+.coursg .content-g .frame-g .box-g:hover img{
+    filter: brightness(100%);
+    transform: scale(1.08);
+}
+.coursg .content-g .frame-g .title-c{
+    color: orange;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.coursg .content-g .frame-g p {
+    font-size: 0.8rem;
+    color: white;
+}

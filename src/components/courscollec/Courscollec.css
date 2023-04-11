@@ -1,0 +1,73 @@
+
+.h2{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    display: inline;
+   }
+   .h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    margin: 0 auto;
+    background: orange;
+    transition: width 0.2s ease-in-out;
+}
+.h2:hover::after{
+    width: 100%;
+}
+.cours .content-c{
+    flex-wrap: wrap;
+    margin-left: 100px;
+   
+}
+.span{
+    color: orange;
+}
+.content-c{
+    margin-top: 80px;
+}
+.cours .content-c .frame{
+    position: relative;
+    width: 350px;
+    height: 410px;
+    padding: 20px;
+    
+    margin: 10px;
+    background: black;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+.cours .content-c .frame .box-c{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.cours .content-c .frame .box-c img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: 0.2s ease-in;
+}
+.cours .content-c .frame .box-c:hover img{
+    filter: brightness(100%);
+    transform: scale(1.08);
+}
+.cours .content-c .frame .title-c{
+    color: orange;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.cours .content-c .frame p {
+    font-size: 0.8rem;
+    color: white;
+}

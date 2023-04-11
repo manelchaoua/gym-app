@@ -1,0 +1,366 @@
+.home{
+    background-color: #707070;
+    display: flex;
+    justify-content: space-between;
+}
+.left-h{
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+}
+.right-h{
+    flex: 1;
+    position: relative;
+   
+}
+.the-best-ad{
+    margin-top: 2rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+}
+.the-best-ad>span{
+    z-index: 2;
+}
+.the-best-ad>div{
+    position: absolute;
+    background-color: orange;
+    width: 5.4rem;
+    height: 80%;
+    left: 6px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+.home-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+.stroke-text{
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+.home-text>div:nth-of-type(3){
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+.figures{
+    display: flex;
+    gap: 2rem;
+}
+.figures>div{
+    display: flex;
+    flex-direction: column;
+}
+.figures>div>span:nth-last-of-type(2){
+    color: white;
+    font-size: 2rem;
+}
+.figures>div>span:nth-last-of-type(1){
+    color: #363d42;
+    text-transform: uppercase;
+}
+.btn{
+    background-color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: 4px solid transparent;
+    transition: 300ms all;
+
+}
+.btn:hover{
+    cursor: pointer;
+}
+.home-buttons{
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+
+}
+.home-buttons>:nth-child(1){
+    color: white;
+    background-color: orange;
+    width: 8rem;
+}
+
+.home-buttons>:nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid orange;
+}
+.home-image {
+    position: absolute;
+    top: 5rem;
+    right: 8rem;
+    width: 23rem;
+}
+.slider section {
+    background-color: rgb(69, 70, 71);
+    color: #FFF;
+}
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+figure {
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 10s slide infinite;
+}
+.slide{
+    position: relative;
+    width: 25%;
+    float: left;
+
+}
+.slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.slide img {
+    width: 100%;
+    height: 500px;
+}
+
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    30%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    50%{
+        left: -200%;
+    }
+    55%{
+        left: -300%;
+    }
+    65%{
+        left: -300%;
+    }
+    66%{
+        left: -200%;
+   }
+   740%{
+    left: -200%;
+}
+75%{
+    left: -100%;
+}
+85%{
+    left: -100%;
+}90%{
+    left: 0;
+}1000%{
+    left: 0;
+}
+}
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+   margin-top: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px black;
+    margin-left: 100px;
+}
+
+.container header {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .form{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd ;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender-box {
+    margin-top: 20px;
+}
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+.gender input{
+    accent-color: #707070;
+}
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+
+}
+.addres :where(input, .select-box) {
+    margin-top: 15px;
+}
+.gender label{
+    color: #707070;
+}
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+.form button {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background-color: #707070;
+}
+.form button:hover{
+    background-color: #333;
+}
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+}
+
+
+
+
+footer {
+   
+    padding: 60px 0;
+  }
+  
+  footer h4 {
+    color: #222;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer li {
+    margin-bottom: 10px;
+  }
+  footer li a{
+    color: black;
+  }
+  
+  footer li i {
+    margin-right: 10px;
+    color: #777;
+  }
+  
+  footer hr {
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .list-inline li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+ .calc{
+    background-color: #707070;
+ }
+.calcule{
+    text-align: center;
+}
